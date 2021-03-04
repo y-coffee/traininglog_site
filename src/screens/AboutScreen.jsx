@@ -2,7 +2,7 @@ import React from 'react';
 
 import MenuTitle from '../components/MenuTitle';
 
-import hoo from '../assets/Mockup_pc.png';
+import hoo from '../assets/Mocup_pc_with.png';
 
 export default function AboutScreen() {
   return (
