@@ -19,8 +19,7 @@ export default function DefaultScreen() {
           <FeatureScreen />
           <AppScreen />
         </main>
-        {/* <Arrow /> */}
-        <Footer style={{ color: 'black' }} />
+        <Footer style={{ color: 'black' }} sortOf="footerPhone" />
       </div>
     </>
 

@@ -1,20 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../App.css';
 import { Link } from 'react-router-dom';
-// import explanationBox from '../components/ExplanationBox';
-// import FeatureContentTitle from '../components/FeatureContentTitle';
+import DehazeIcon from '@material-ui/icons/Dehaze';
+
 import Footer from '../components/Footer';
-// import NavigationBar3 from '../components/NavigationBarTraining';
 
 import joo from '../assets/Background_program_top.png';
 import SubTitleBox from '../components/SubTitleBox';
 import NavigationBarTraining from '../components/NavigationBarTraining';
+import Humberger from '../components/HumbergerScreen';
 
 export default function TrainingMenu() {
+  const [open, setOpen] = useState(false);
+  const humberger = () => {
+    setOpen(!open);
+  };
+
   return (
     <>
-      <NavigationBarTraining navTitle1="TOP" navTitle2="Supplement" navTitle3="App" />
-      <div style={{ backgroundImage: `url(${joo})`, height: 900 }} className="areaSupplementView">
+      <NavigationBarTraining navTitle1="TOP" navTitle2="Supplement" navTitle3="App" className="navPhone" />
+      <div className="navPC">
+        <Humberger koko={`${open ? 'IsBlue' : ''}`} navTitlePhone1="TOP" navTitlePhone2="Supplement" navTitlePhone3="App" navTitlePhone4="Contact" link1="/" link2="/supplement" link3="/tremenuApp" link4="/contact" />
+      </div>
+      <div className="humbergerBox">
+        <DehazeIcon className="humberger" style={{ fontSize: '3rem' }} onClick={humberger} />
+      </div>
+
+      <div style={{ backgroundImage: `url(${joo})`, height: 900 }} className="areaTrainingMenuView">
         <div className="container" style={{ height: 650 }}>
           <Link to="/531program" style={{ color: 'inherit', textDecoration: 'inherit' }}>
             <div className="trainigMenuIntroBox">
@@ -45,6 +57,7 @@ export default function TrainingMenu() {
           style={{
             color: '#ffffff', marginTop: 30,
           }}
+          sortOf="footerPhoneTrainingmenu"
         />
       </div>
     </>

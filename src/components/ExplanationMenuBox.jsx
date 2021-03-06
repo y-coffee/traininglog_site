@@ -1,9 +1,5 @@
-// import { render } from '@testing-library/react';
 import { shape, string } from 'prop-types';
 import React from 'react';
-// import Test1 from './Test1';
-
-// import loo from '../assets/Savas-protein1.png';
 
 export default function ExplanationMenuBox(props) {
   const {
@@ -14,7 +10,7 @@ export default function ExplanationMenuBox(props) {
       <>
         <div className="explanationBox" style={style2}>
           <div>
-            <p>
+            <div>
               {sentence1}
               <br />
               <br />
@@ -56,11 +52,8 @@ export default function ExplanationMenuBox(props) {
               <br />
               <br />
               {sentence5}
-            </p>
+            </div>
           </div>
-          {/* <div>
-            <img src={loo} alt="loo" className="explanationImage" style={style} />
-          </div> */}
         </div>
       </>
     );
@@ -69,7 +62,7 @@ export default function ExplanationMenuBox(props) {
       <>
         <div className="explanationBox" style={style2}>
           <div>
-            <p>
+            <div>
               {sentence1}
               <br />
               <br />
@@ -119,11 +112,8 @@ export default function ExplanationMenuBox(props) {
               <br />
               <br />
               {sentence5}
-            </p>
+            </div>
           </div>
-          {/* <div>
-            <img src={loo} alt="loo" className="explanationImage" style={style} />
-          </div> */}
         </div>
       </>
     );
@@ -148,21 +138,29 @@ export default function ExplanationMenuBox(props) {
             {sentence5}
           </p>
         </div>
-        {/* <div>
-          <img src={loo} alt="loo" className="explanationImage" style={style} />
-        </div> */}
       </div>
     </>
   );
 }
 
 ExplanationMenuBox.propTypes = {
-  sentence1: string.isRequired,
-  sentence2: string.isRequired,
-  sentence3: string.isRequired,
-  sentence4: string.isRequired,
-  sentence5: string.isRequired,
-  style2: shape().isRequired,
-  piramid: string.isRequired,
-  tre531: string.isRequired,
+  sentence1: string,
+  sentence2: string,
+  sentence3: string,
+  sentence4: string,
+  sentence5: string,
+  style2: shape(),
+  piramid: string,
+  tre531: string,
+};
+
+ExplanationMenuBox.defaultProps = {
+  sentence1: null,
+  sentence2: null,
+  sentence3: null,
+  sentence4: null,
+  sentence5: null,
+  style2: null,
+  piramid: null,
+  tre531: null,
 };

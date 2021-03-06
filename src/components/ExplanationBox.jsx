@@ -1,8 +1,4 @@
-// import { render } from '@testing-library/react';
 import React from 'react';
-// import Test1 from './Test1';
-
-// import loo from '../assets/Savas-protein1.png';
 
 export default function explanationBox(props) {
   const {
@@ -50,9 +46,6 @@ export default function explanationBox(props) {
             {sentence5}
           </p>
         </div>
-        {/* <div>
-          <img src={loo} alt="loo" className="explanationImage" style={style} />
-        </div> */}
       </div>
     </>
   );

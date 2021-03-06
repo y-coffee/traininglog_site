@@ -1,9 +1,5 @@
-// import { render } from '@testing-library/react';
 import { string, shape } from 'prop-types';
 import React from 'react';
-// import Test1 from './Test1';
-
-// import loo from '../assets/Savas-protein1.png';
 
 export default function AimBox(props) {
   const {
@@ -19,9 +15,6 @@ export default function AimBox(props) {
             {sentence2}
           </p>
         </div>
-        {/* <div>
-          <img src={loo} alt="loo" className="explanationImage" style={style} />
-        </div> */}
       </div>
     </>
   );

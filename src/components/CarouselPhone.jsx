@@ -1,16 +1,35 @@
 import React, { useState } from 'react';
+import { string } from 'prop-types';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import images from '../Helper/CarouselData';
 
-export default function Carousel() {
+export default function CarouselPhone(props) {
   const [currImg, setCurrImg] = useState(0);
   const [currTitle, setCurrTitle] = useState(0);
   const [currSubtitle, setCurrSubtitle] = useState(0);
 
+  const { ko } = props;
+
   return (
     <div className="carousel">
       <div className="carouselInner">
+        <div className="center">
+          <img src={images[currImg].img} alt="ko" style={{ width: 150 }} className="carouselPic" />
+          <div className="carouselTextBox">
+            <p
+              style={{
+                fontSize: '5vw', fontWeight: 'bold', marginTop: 30, marginBottom: 30,
+              }}
+              className={ko}
+            >
+              {images[currImg].title}
+            </p>
+            <p style={{ fontSize: '4vw', whiteSpace: 'pre-line' }}>{images[currImg].subtitle}</p>
+          </div>
+        </div>
+      </div>
+      <div className="carouselPhoneBox">
         <div
           className="left"
           onClick={() => {
@@ -21,21 +40,7 @@ export default function Carousel() {
           }}
           aria-hidden="true"
         >
-          <ArrowBackIcon style={{ fontSize: 50 }} />
-        </div>
-        <div className="center">
-          <img src={images[currImg].img} alt="ko" style={{ width: 250 }} className="carouselPic" />
-          <div>
-            <p
-              style={{
-                fontSize: 25, fontWeight: 'bold', marginTop: 60, marginBottom: 60,
-              }}
-              className="carouselText"
-            >
-              {images[currImg].title}
-            </p>
-            <p style={{ fontSize: 18, whiteSpace: 'pre-line' }}>{images[currImg].subtitle}</p>
-          </div>
+          <ArrowBackIcon style={{ fontSize: 60, color: '#fff' }} />
         </div>
         <div
           className="right"
@@ -46,9 +51,17 @@ export default function Carousel() {
           }}
           aria-hidden="true"
         >
-          <ArrowForwardIcon style={{ fontSize: 50 }} />
+          <ArrowForwardIcon style={{ fontSize: 60, color: '#fff' }} />
         </div>
       </div>
     </div>
   );
 }
+
+CarouselPhone.propTypes = {
+  ko: string,
+};
+
+CarouselPhone.defaultProps = {
+  ko: null,
+};

@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import DehazeIcon from '@material-ui/icons/Dehaze';
 
 import FeatureContentTitle from '../components/FeatureContentTitle';
 import NavigationBarTraining from '../components/NavigationBarTraining';
@@ -8,16 +9,30 @@ import ExplanationMenuBox from '../components/ExplanationMenuBox';
 import Footer from '../components/Footer';
 
 import joo from '../assets/Background_program_top.png';
+import Humberger from '../components/HumbergerScreen';
 
 export default function Piramid() {
+  const [open, setOpen] = useState(false);
+  const humberger = () => {
+    setOpen(!open);
+  };
+
   return (
     <>
       <NavigationBarTraining
         navTitle1="TOP"
         navTitle2="Supplement"
         navTitle3="App"
+        className="navPhone"
       />
-      <div style={{ backgroundImage: `url(${joo})`, height: 1600 }} className="area10x3View">
+      <div className="navPC">
+        <Humberger koko={`${open ? 'IsBlue' : ''}`} navTitlePhone1="TOP" navTitlePhone2="Supplement" navTitlePhone3="App" navTitlePhone4="Contact" link1="/" link2="supplement" link3="tremenuApp" link4="contact" />
+      </div>
+      <div className="humbergerBox">
+        <DehazeIcon className="humberger" style={{ fontSize: '3rem' }} onClick={humberger} />
+      </div>
+
+      <div style={{ backgroundImage: `url(${joo})`, height: 1600 }} className="areaPiramidView">
         <div className="container">
           <div className="subTitleBox">
             <h2>ピラミッド法</h2>
@@ -28,7 +43,7 @@ export default function Piramid() {
             sentence2="速筋を疲弊させた後に遅筋にもアプローチすることができ、筋肥大効率も視野に入っています。"
             style2={{ height: 160, paddingBottom: 0 }}
           />
-          <FeatureContentTitle title="ダウンロード" style={{ width: 200, marginTop: 50 }} />
+          <FeatureContentTitle title="トレーニングの方法" style={{ width: 260, marginTop: 50 }} />
           <ExplanationMenuBox
             sentence1="中負荷・高負荷を取り入れたトレーニング法で、1回のトレーニングあたり5セット行います。1セット目60%で8回、2セット目70%で6回、3セット目80%で4回、4セット目70％で限界まで、5セット目60%で限界までという内容です。"
             sentence2="このパーセンテージは1回しか挙げられない重量に対してです。ベンチプレス100kgがMAXの人の80%は80kgになります。イメージとしては、筋肥大→筋力→筋肥大という順でセットごとに狙いがあります。"
@@ -53,6 +68,7 @@ export default function Piramid() {
           style={{
             color: '#ffffff', marginTop: 560,
           }}
+          sortOf="footerPhonePiramid"
         />
       </div>
 

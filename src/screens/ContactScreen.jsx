@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { string } from 'prop-types';
+import DehazeIcon from '@material-ui/icons/Dehaze';
 import firebase from 'firebase/app';
 import db from '../firebase';
 
 import Footer from '../components/Footer';
 import NavigationBarContact from '../components/NavigationBarContact';
+import Humberger from '../components/HumbergerScreen';
 
 import joo from '../assets/Background_program_top.png';
 
@@ -35,14 +37,27 @@ export default function ContactScreen() {
     setMessage('');
   };
 
+  const [open, setOpen] = useState(false);
+  const humberger = () => {
+    setOpen(!open);
+  };
+
   return (
     <>
       <NavigationBarContact
         navTitle1="TOP"
         navTitle2="TrainingMenu"
         navTitle3="App"
+        className="navPhone"
       />
-      <div style={{ backgroundImage: `url(${joo})`, height: 1300 }} className="area10x3View">
+      <div className="navPC">
+        <Humberger koko={`${open ? 'IsBlue' : ''}`} navTitlePhone1="TOP" navTitlePhone2="Training" navTitlePhone3="Supplement" navTitlePhone4="App" link1="/" link2="trainingMenu" link3="supplement" link4="tremenuApp" />
+      </div>
+      <div className="humbergerBox">
+        <DehazeIcon className="humberger" style={{ fontSize: '3rem' }} onClick={humberger} />
+      </div>
+
+      <div style={{ backgroundImage: `url(${joo})`, height: 1300 }} className="areaContactView">
         <div
           className="container"
           style={{
@@ -52,27 +67,25 @@ export default function ContactScreen() {
           <div className="subTitleBox">
             <h2>お問い合わせ</h2>
           </div>
-          <div>
-            <p style={{ color: '#ffffff', fontSize: 18 }}>当Webサイトをご利用頂きありがとうございます。</p>
-            <p style={{ color: '#ffffff', fontSize: 18 }}>トレーニングメニューやサプリメントそしてアプリについてのお問い合わせは以下のフォームからお願いいたします。また、当Webサイトに追加希望のトピックなどのご連絡もお待ちしております。</p>
-            <p style={{ color: '#ffffff', fontSize: 18 }}>良いトレーニングライフを！</p>
+          <div className="contactDesctiptionBox">
+            <p className="contactDesctiption">当Webサイトをご利用頂きありがとうございます。</p>
+            <p className="contactDesctiption">トレーニングメニューやサプリメントそしてアプリについてのお問い合わせは以下のフォームからお願いいたします。また、当Webサイトに追加希望のトピックなどのご連絡もお待ちしております。</p>
+            <p className="contactDesctiption">良いトレーニングライフを！</p>
           </div>
           <br />
           <br />
-          <form onSubmit={onSubmit}>
-            <div>
+          <form onSubmit={onSubmit} className="contactForm">
+            <div className="contactFormBox">
               <label htmlFor={nameID}>
-                <b style={{ color: '#ffffff', fontSize: 23 }}>
+                <b className="bLabel">
                   お名前
-                  <span style={{ color: '#F0AC19' }}>(必須)</span>
+                  <span className="spanLabel">(必須)</span>
                 </b>
                 <br />
                 <input
                   placeholder="ニックネーム可"
                   id={nameID}
-                  style={{
-                    width: '60%', height: 30, lineHeight: 30, fontSize: 15,
-                  }}
+                  className="nameInput"
                   type="text"
                   value={name}
                   onChange={(event) => { setName(event.target.value); }}
@@ -83,17 +96,15 @@ export default function ContactScreen() {
             <br />
             <div>
               <label htmlFor={mailID}>
-                <b style={{ color: '#ffffff', fontSize: 23 }}>
+                <b className="bLabel">
                   ご連絡先
-                  <span style={{ color: '#F0AC19' }}>(必須)</span>
+                  <span className="spanLabel">(必須)</span>
                 </b>
                 <br />
                 <input
                   placeholder="hogehoge@example.com"
                   id={mailID}
-                  style={{
-                    width: '60%', height: 30, lineHeight: 30, fontSize: 15,
-                  }}
+                  className="adressInput"
                   type="text"
                   value={mail}
                   onChange={(event) => { setMail(event.target.value); }}
@@ -104,26 +115,24 @@ export default function ContactScreen() {
             <br />
             <div>
               <label htmlFor={messageID}>
-                <b style={{ color: '#ffffff', fontSize: 23 }}>
+                <b className="bLabel">
                   お問い合わせ内容
-                  <span style={{ color: '#F0AC19' }}>(必須)</span>
+                  <span className="spanLabel">(必須)</span>
                 </b>
                 <br />
                 <textarea
                   placeholder="メッセージ"
                   id={messageID}
-                  style={{
-                    maxWidth: '100%', width: '100%', height: 350, lineHeight: 1.5, fontSize: 15, whiteSpace: 'pre-wrap',
-                  }}
                   type="text"
                   value={message}
+                  className="textarea"
                   onChange={(event) => { setMessage(event.target.value); }}
                 />
               </label>
             </div>
             <br />
             <br />
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <div className="contactButtonBox">
               <button
                 type="submit"
                 style={{
@@ -140,6 +149,7 @@ export default function ContactScreen() {
             color: '#ffffff',
             marginTop: 420,
           }}
+          sortOf="footerPhoneContact"
         />
       </div>
     </>

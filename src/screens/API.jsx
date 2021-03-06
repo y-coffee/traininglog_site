@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 // import dotenv from 'dotenv';
+import DehazeIcon from '@material-ui/icons/Dehaze';
 
 import NavigationBarTraining from '../components/NavigationBarTraining';
 import joo from '../assets/Background_program_top.png';
 import Footer from '../components/Footer';
+import Humberger from '../components/HumbergerScreen';
 
 require('dotenv').config();
 
@@ -13,6 +15,10 @@ export default function API() {
   const [images, setImages] = useState([]);
   const [text, setText] = useState('');
   const [query, setQuery] = useState('training');
+  const [open, setOpen] = useState(false);
+  const humberger = () => {
+    setOpen(!open);
+  };
 
   useEffect(() => {
     fetch(`https://api.unsplash.com/search/photos?query=${query}&client_id=${env}`)
@@ -33,8 +39,18 @@ export default function API() {
         navTitle1="TOP"
         navTitle2="Supplement"
         navTitle3="App"
+        className="navPhone"
       />
-      <div style={{ backgroundImage: `url(${joo})`, height: 2000 }} className="area10x3View">
+      <div className="navPC">
+        <Humberger koko={`${open ? 'IsBlue' : ''}`} navTitlePhone1="TOP" navTitlePhone2="Supplement" navTitlePhone3="App" navTitlePhone4="Contact" link1="/" link2="/supplement" link3="/tremenuApp" link4="/contact" />
+      </div>
+      <div className="humbergerBox">
+        <DehazeIcon className="humberger" style={{ fontSize: '3rem' }} onClick={humberger} />
+      </div>
+      <div
+        style={{ backgroundImage: `url(${joo})`, height: 2000 }}
+        className="areaSearchView"
+      >
         <div
           className="container"
           style={{
@@ -54,7 +70,7 @@ export default function API() {
             <p className="searchExplain">例）腕立て伏せ → Push Up、スクワット → Squat</p>
           </div>
           <div>
-            <form onSubmit={onSubmit}>
+            <form onSubmit={onSubmit} className="searchForm">
               <input
                 type="text"
                 value={text}
@@ -76,7 +92,7 @@ export default function API() {
             }
           </div>
         </div>
-        <Footer style={{ color: '#fff', marginTop: 60 }} />
+        <Footer style={{ color: '#fff', marginTop: 60 }} sortOf="footerPhoneSearch" />
       </div>
     </>
   );

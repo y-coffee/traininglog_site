@@ -10,7 +10,7 @@ export default function AboutScreen() {
       <MenuTitle title="About" />
       <div className="areaAboutView">
         <div className="container">
-          <div>
+          <div className="ko">
             <img src={hoo} alt="Mockup_pc" className="pcMockupImage" />
           </div>
           <div className="aboutBox">
@@ -18,7 +18,7 @@ export default function AboutScreen() {
             <p className="aboutDescription">
               筋トレについての役立つ情報を発信しています。
               <br />
-              範囲は各種トレーニングプログラムに始まり、サプリメントやスマートフォンアプリケーション「今日のトレメニュー」の紹介まで多岐に渡ります。
+              範囲は筋肥大や筋力向上を目的とした各種トレーニングプログラムに始まり、サプリメントやスマートフォンアプリ「今日のトレメニュー」の紹介まで多岐に渡ります。
             </p>
           </div>
         </div>

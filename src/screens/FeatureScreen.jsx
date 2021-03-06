@@ -8,7 +8,6 @@ import MenuTitle from '../components/MenuTitle';
 import foo from '../assets/Icon_program.svg';
 import hoo from '../assets/Icon_supplement.svg';
 import goo from '../assets/Background_feature.png';
-// import Supplement from './Supplement';
 
 export default function FeatureScreen() {
   return (
