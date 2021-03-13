@@ -5,6 +5,7 @@ import DehazeIcon from '@material-ui/icons/Dehaze';
 
 import Footer from '../components/Footer';
 
+// import joo from '../assets/ダウンロード2-min.png';
 import joo from '../assets/Background_program_top.png';
 import SubTitleBox from '../components/SubTitleBox';
 import NavigationBarTraining from '../components/NavigationBarTraining';

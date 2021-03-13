@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 import DehazeIcon from '@material-ui/icons/Dehaze';
 
-import foo from '../assets/Background_top1-2.png';
+import foo from '../assets/Background_top1-2-min.png';
 import goo from '../assets/Top_word.png';
 import koo from '../assets/Muscles.svg';
 
@@ -24,7 +24,6 @@ export default function TopScreen() {
     setOpen(!open);
     window.scrollTo({
       top: 1220,
-      // top: 500,
       behavior: 'smooth',
     });
   };
