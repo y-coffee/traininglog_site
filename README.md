@@ -19,9 +19,15 @@ Training Menu Today/今日のトレメニュー
 使用技術一覧(言語・ライブラリ・ツール)
 ====
 
-・React.js
+・React.js 17.0.1
 
-・Firebase
+・React Router Dom 5.2.0
+
+・Prop Types 15.7.2
+
+・Material UI 4.11.2(スマートフォンのハンバーガーメニュー用アイコン)
+
+・Firebase 8.2.9
 
 ・Adobe Photoshop
 
