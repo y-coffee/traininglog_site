@@ -32,7 +32,7 @@ export default function Piramid() {
       <div className="humbergerBox">
         <DehazeIcon className="humberger" style={{ fontSize: '3rem' }} onClick={humberger} />
       </div>
-      <div style={{ backgroundImage: `url(${joo})`, height: 2120 }} className="area531View">
+      <div style={{ backgroundImage: `url(${joo})`, height: 2210 }} className="area531View">
         <div className="container">
           <div className="subTitleBox">
             <h2>5・3・1プログラム</h2>
@@ -70,7 +70,7 @@ export default function Piramid() {
         </div>
         <Footer
           style={{
-            color: '#ffffff', marginTop: 1080,
+            color: '#ffffff', marginTop: 1170,
           }}
           sortOf="footerPhone531"
         />

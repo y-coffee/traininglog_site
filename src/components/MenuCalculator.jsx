@@ -28,7 +28,7 @@ export default function MenuCalculator(props) {
             </div>
           </div>
           <div className="calPiramidTableBox" style={{ color: '#fff' }}>
-            <table className="piramidTable">
+            <table className="calPiramidTable">
               <tbody>
                 <tr>
                   <th>1セット目</th>
@@ -99,7 +99,7 @@ export default function MenuCalculator(props) {
             </div>
           </div>
           <div className="calTre531TableBox" style={{ color: '#fff' }}>
-            <table className="tre531Table">
+            <table className="calTre531Table">
               <tbody>
                 <tr>
                   <th>&nbsp;&nbsp;</th>
