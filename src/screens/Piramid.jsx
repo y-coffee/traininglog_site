@@ -7,7 +7,6 @@ import NavigationBarTraining from '../components/NavigationBarTraining';
 import AimBox from '../components/AimBox';
 import ExplanationMenuBox from '../components/ExplanationMenuBox';
 import Footer from '../components/Footer';
-import MenuCalculator from '../components/MenuCalculator';
 
 import joo from '../assets/Background_program_top.png';
 import Humberger from '../components/HumbergerScreen';
@@ -33,7 +32,7 @@ export default function Piramid() {
         <DehazeIcon className="humberger" style={{ fontSize: '3rem' }} onClick={humberger} />
       </div>
 
-      <div style={{ backgroundImage: `url(${joo})`, height: 2200 }} className="areaPiramidView">
+      <div style={{ backgroundImage: `url(${joo})`, height: 1600 }} className="areaPiramidView">
         <div className="container">
           <div className="subTitleBox">
             <h2>ピラミッド法</h2>
@@ -54,10 +53,6 @@ export default function Piramid() {
             style2={{ height: 800 }}
             piramid="piramid"
           />
-          <div className="calcompoPiramid">
-            <FeatureContentTitle title="カルキュレーター" style={{ width: 260, marginTop: 50, marginBottom: 50 }} />
-            <MenuCalculator menu="ピラミッド法" tablePiramid="tablePiramid" />
-          </div>
           <div className="menuLink">
             <p>
               <span className="menuLinkHead">●</span>
@@ -71,7 +66,7 @@ export default function Piramid() {
         </div>
         <Footer
           style={{
-            color: '#ffffff', marginTop: 1160,
+            color: '#ffffff', marginTop: 560,
           }}
           sortOf="footerPhonePiramid"
         />
