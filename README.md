@@ -1,4 +1,4 @@
-Name
+サイト名
 ====
 
 Training Menu Today/今日のトレメニュー
@@ -20,9 +20,13 @@ Training Menu Today/今日のトレメニュー
 ====
 
 ・React.js
+
 ・Firebase
+
 ・Adobe Photoshop
+
 ・Adobe XD
+
 ・ESLint(Airbnb)
 
 ## React.js
@@ -33,7 +37,11 @@ Training Menu Today/今日のトレメニュー
 ====
 
 ・ページ遷移機能(React Routerを利用)
+
 ・トレーニングプログラムカルキュレーター（useStateを利用しユーザーが入力した数字を基に適切なトレーニングプログラムを作成）
+
 ・画像検索機能(外部APIを活用した非同期処理/取得した画像データをmapメソッドで表示)
+
 ・お問い合わせ機能(FirebaseのFirestoreをデータベースに利用)
+
 ※APIキーやFirebaseに関するデータはenvファイル内で環境変数にしています。
