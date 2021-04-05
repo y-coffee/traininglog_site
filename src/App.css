@@ -454,6 +454,20 @@ header > .container {
   margin-top: 30px;
 }
 
+.calculatorBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 32px;
+  height: 400px;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 110px;
+}
+
+
 /* 531のページ */
 .area531View {
   width: 100%;
@@ -485,6 +499,18 @@ header > .container {
   margin-top: 30px;
 }
 
+.calculatorBox531 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 32px;
+  height: 400px;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 110px;
+}
 
 /* 画像検索ページ */
 .areaSearchView {
@@ -1065,6 +1091,19 @@ header > .container {
   margin-right: auto;
 }
 
+.calcompo531 {
+  margin-top: 400px;
+  margin-bottom: -310px;
+}
+
+.calculatorBox531 {
+  font-size: 4vw;
+  width: 90%;
+  height: 430px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .menuLink {
   width: 100%;
   margin-top: 400px;
@@ -1080,7 +1119,7 @@ header > .container {
 }
 
 .footerPhone531 {
-  margin-top: 770px;
+  margin-top: 1370px;
 }
 
 /* 10x3スクリーン */
@@ -1121,8 +1160,23 @@ header > .container {
   margin-right: auto;
 }
 
+.calcompoPiramid {
+  margin-top: 350px;
+  margin-bottom: -270px;
+}
+
+
+.calculatorBox {
+  font-size: 4vw;
+  width: 90%;
+  height: 460px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .footerPhonePiramid {
-  margin-top: 1390px;
+  margin-top: 1990px;
 }
 
 /* 画像検索サービススクリーン */
