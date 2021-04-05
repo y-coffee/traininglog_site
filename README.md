@@ -1,7 +1,7 @@
 サイト名
 ====
 
-Training Menu Today/今日のトレメニュー
+Training Menu Today/今日のトレメニュー ～筋トレ情報サイト～
 
 概要
 ====
