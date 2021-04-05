@@ -29,9 +29,9 @@ Training Menu Today/今日のトレメニュー ～筋トレ情報サイト～
 
 ・Firebase 8.2.9
 
-・Adobe Photoshop
+・Adobe Photoshop(画像の編集加工)
 
-・Adobe XD
+・Adobe XD(デザインカンプ)
 
 ・ESLint(Airbnb)
 
