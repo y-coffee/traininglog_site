@@ -8,13 +8,13 @@ Training Menu Today/今日のトレメニュー ～筋トレ情報サイト～
 
 ![tremenu-site-firstview](https://user-images.githubusercontent.com/68333078/113622055-6abe0c00-9697-11eb-9c14-6ecac0756763.png)
 
-ネイティブアプリ「今日のトレメニュー([リンク(外部))](https://play.google.com/store/apps/details?id=jp.AppCreate.TrainingLog)」を紹介するためのSPAサイトです。PC・スマートフォンのレスポンシブ対応。
+ネイティブアプリ「今日のトレメニュー[(リンク)](https://play.google.com/store/apps/details?id=jp.AppCreate.TrainingLog)」を紹介するためのSPAサイトです。PC・スマートフォンのレスポンシブ対応。
 筋トレ情報サイトというコンセプトのもと、アプリの紹介だけでなくトレーニングプログラムやサプリメントの情報の紹介も行っています。
 
 サイトURL
 ====
 
-サイトはこちらからどうぞ：[リンク(外部)](https://training-menu-today.netlify.app/)
+サイトはこちらからどうぞ：[リンク](https://training-menu-today.netlify.app/)
 
 使用技術一覧(言語・ライブラリ・ツール)
 ====
