@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 
 import joo from '../assets/Background_program_top.png';
 import Humberger from '../components/HumbergerScreen';
+import MenuCalculator from '../components/MenuCalculator';
 
 export default function Piramid() {
   const [open, setOpen] = useState(false);
@@ -31,7 +32,7 @@ export default function Piramid() {
       <div className="humbergerBox">
         <DehazeIcon className="humberger" style={{ fontSize: '3rem' }} onClick={humberger} />
       </div>
-      <div style={{ backgroundImage: `url(${joo})`, height: 1600 }} className="area531View">
+      <div style={{ backgroundImage: `url(${joo})`, height: 2210 }} className="area531View">
         <div className="container">
           <div className="subTitleBox">
             <h2>5・3・1プログラム</h2>
@@ -52,6 +53,10 @@ export default function Piramid() {
             style2={{ height: 800 }}
             tre531="tre531"
           />
+          <div className="calcompo531">
+            <FeatureContentTitle title="カルキュレーター" style={{ width: 260, marginTop: 50 }} />
+            <MenuCalculator menu="ピラミッド法" table531="table531" />
+          </div>
           <div className="menuLink">
             <p>
               <span className="menuLinkHead">●</span>
@@ -65,7 +70,7 @@ export default function Piramid() {
         </div>
         <Footer
           style={{
-            color: '#ffffff', marginTop: 560,
+            color: '#ffffff', marginTop: 1170,
           }}
           sortOf="footerPhone531"
         />

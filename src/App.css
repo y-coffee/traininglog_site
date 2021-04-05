@@ -445,6 +445,13 @@ header > .container {
   text-align: center;
 }
 
+.calPiramidTableBox {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
 .piramidTable, th, td {
   border: 1px solid #ffffff;
 }
@@ -452,6 +459,26 @@ header > .container {
 .piramidTable {
   width: 500px;
   margin-top: 30px;
+}
+
+.calPiramidTable, th, td {
+  border: 1px solid #ffffff;
+}
+
+.calPiramidTable {
+  width: 500px;
+  margin-top: 30px;
+}
+
+.calcompoPiramid {
+  height: 500px;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 150px;
+}
+
+.calculatorBox {
+  margin-top: 60px;
 }
 
 /* 531のページ */
@@ -469,10 +496,22 @@ header > .container {
   height: 1000px;
 }
 
+.tre531Table, th, td {
+  border: 1px solid #ffffff;
+}
+
 .tre531TableBox{
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+.calTre531TableBox {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: -100px;
 }
 
 .tre531Table, th, td {
@@ -483,6 +522,27 @@ header > .container {
 .tre531Table {
   width: 800px;
   margin-top: 30px;
+}
+.calTre531Table, th, td {
+  border: 1px solid #ffffff;
+  width: 20%;
+}
+
+.calTre531Table {
+  width: 800px;
+  margin-top: 30px;
+}
+
+.calculatorBox531 {
+  margin-top: 60px;
+}
+
+.calcompo531 {
+  height: 470px;
+  /* padding-bottom: -30px; */
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 140px;
 }
 
 
@@ -1007,7 +1067,7 @@ header > .container {
 
 .area531View {
   width: 100%;
-  padding-bottom: 200px;
+  padding-bottom: 250px;
   padding-top:  50px;
 
 }
@@ -1080,8 +1140,34 @@ header > .container {
 }
 
 .footerPhone531 {
-  margin-top: 770px;
+  margin-top: 1430px;
 }
+
+.calcompo531 {
+  margin-top: 400px;
+  width: 100%;
+  margin-bottom: -210px;
+}
+
+.calculatorBox531 {
+  font-size: 4vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+
+}
+
+.calTre531TableBox {
+  width: 100%;
+}
+
+.calTre531Table {
+  width: 90%;
+  font-size: 2.5vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /* 10x3スクリーン */
 .area10x3View {
@@ -1122,7 +1208,33 @@ header > .container {
 }
 
 .footerPhonePiramid {
-  margin-top: 1390px;
+  margin-top: 2040px;
+}
+
+.calcompoPiramid {
+  margin-top: 350px;
+  width: 100%;
+  margin-bottom: -180px;
+}
+
+.calPiramidTableBox {
+  width: 100%;
+}
+
+.calPiramidTable {
+  width: 90%;
+  font-size: 2.5vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.calculatorBox {
+  font-size: 4vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+
 }
 
 /* 画像検索サービススクリーン */
