@@ -1,46 +1,39 @@
 Name
 ====
 
-Y.U's Portfolio Site
+Training Menu Today/今日のトレメニュー
 
-## Description
+概要
+====
 
 ![tremenu-site-firstview](https://user-images.githubusercontent.com/68333078/113622055-6abe0c00-9697-11eb-9c14-6ecac0756763.png)
 
-Vue.jsで制作したレスポンシブ対応のSPAサイトです。Vue Router、Vue CLIを使用しています。
+ネイティブアプリ「今日のトレメニュー」を紹介するためのSPAサイトです。PC・スマートフォンのレスポンシブ対応。
+筋トレ情報サイトというコンセプトのもと、アプリの紹介だけでなくトレーニングプログラムやサプリメントの情報の紹介も行っています。
 
-CSSやJavaScriptメソッドのレスポンシブ対応はプラグインを使わずコーディングしています。
+サイトURL
+====
 
-使用したディレクティブはv-bind、v-on、v-for、v-model、v-if。コンポーネント間の情報のやりとりはpropsを使用しました。また、お問い合わせフォームに入力されたデータはaxiosでバックエンドのFirebaseのWeb APIを叩いて保存しています。
+サイトはこちらからどうぞ：[リンク(外部)](https://y-u-portfolio.netlify.app/)
 
-Skills、Works、About and Contactのパートがあり、Worksではこれまでに作ったレスポンシブ対応WebサイトとWebアプリケーションをご紹介しております。
+使用技術一覧(言語・ライブラリ・ツール)
+====
 
-■ 使用言語・ツール：Vue.js/Firebase/Adobe Photoshop/Adobe XD
+・React.js
+・Firebase
+・Adobe Photoshop
+・Adobe XD
+・ESLint(Airbnb)
 
-■ サイトはこちらからどうぞ：[リンク(外部)](https://y-u-portfolio.netlify.app/)
+## React.js
 
+再利用可能なものはコンポーネント化したり、propsを用いて条件分岐付きのレンダリングなどをしています。ページ遷移後は該当するページの一番上にビューが来るように調節しました。以下の機能一覧にあるいくつかの機能を実装するために非同期処理をしています。
 
+機能一覧
+====
 
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+・ページ遷移機能(React Routerを利用)
+・トレーニングプログラムカルキュレーター（useStateを利用しユーザーが入力した数字を基に適切なトレーニングプログラムを作成）
+・画像検索機能(外部APIを活用した非同期処理/取得した画像データをmapメソッドで表示)
+・お問い合わせ機能(FirebaseのFirestoreをデータベースに利用)
+※APIキーやFirebaseに関するデータはenvファイル内で環境変数にしています。
