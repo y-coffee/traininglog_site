@@ -33,7 +33,7 @@ Training Menu Today/今日のトレメニュー ～筋トレ情報サイト～
 
 ・Adobe XD(デザインカンプ)
 
-・ESLint(Airbnb)
+・ESLint 7.19.0(Airbnb)
 
 ## React.js
 
