@@ -14,7 +14,7 @@ Training Menu Today/今日のトレメニュー ～筋トレ情報サイト～
 サイトURL
 ====
 
-サイトはこちらからどうぞ：[リンク(外部)](https://y-u-portfolio.netlify.app/)
+サイトはこちらからどうぞ：[リンク(外部)](https://training-menu-today.netlify.app/)
 
 使用技術一覧(言語・ライブラリ・ツール)
 ====
