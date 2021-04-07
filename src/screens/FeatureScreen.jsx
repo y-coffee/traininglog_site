@@ -47,9 +47,7 @@ export default function FeatureScreen() {
               </div>
               <div className="featureDescription">
                 <p>
-                  トレーニングの効果を向上させ、パフォーマンスを支えるサプリメントをいくつか紹介しています。
-                  <br />
-                  身体ケアもトレーニングの一環です。
+                  トレーニングの効果を向上させ、パフォーマンスを支えるサプリメントをいくつか紹介しています。ケアもトレーニングの一環です。
                   <br />
                   <br />
                   例1)プロテイン
