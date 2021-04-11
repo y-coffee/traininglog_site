@@ -19,21 +19,21 @@ Training Menu Today/今日のトレメニュー ～筋トレ情報サイト～
 使用技術一覧(言語・ライブラリ・ツール)
 ====
 
-・React.js 17.0.1
+- React.js 17.0.1
 
-・React Router Dom 5.2.0
+- React Router Dom 5.2.0
 
-・Prop Types 15.7.2
+- Prop Types 15.7.2
 
-・Material UI 4.11.2(スマートフォンのハンバーガーメニュー用アイコン)
+- Material UI 4.11.2(スマートフォンのハンバーガーメニュー用アイコン)
 
-・Firebase 8.2.9
+- Firebase 8.2.9
 
-・Adobe Photoshop(画像の編集加工)
+- Adobe Photoshop(画像の編集加工)
 
-・Adobe XD(デザインカンプ)
+- Adobe XD(デザインカンプ)
 
-・ESLint 7.19.0(Airbnb)
+- ESLint 7.19.0(Airbnb)
 
 ## React.js
 
@@ -44,12 +44,12 @@ Training Menu Today/今日のトレメニュー ～筋トレ情報サイト～
 機能一覧
 ====
 
-・ページ遷移機能(React Routerを利用)
+- ページ遷移機能(React Routerを利用)
 
-・トレーニングプログラムカルキュレーター（ユーザーが入力した数字から筋トレプログラムを作成/useStateを用いた非同期処理）
+- トレーニングプログラムカルキュレーター（ユーザーが入力した数字から筋トレプログラムを作成/useStateを用いた非同期処理）
 
-・画像検索機能(外部APIを活用した非同期処理/取得した画像データをmapメソッドで表示)
+- 画像検索機能(外部APIを活用した非同期処理/取得した画像データをmapメソッドで表示)
 
-・カルーセル(アプリ画像と紹介文がクリックによって切り替わる/useStateを使用したデータの呼び出し)
+- カルーセル(アプリ画像と紹介文がクリックによって切り替わる/useStateを使用したデータの呼び出し)
 
-・お問い合わせ機能(FirebaseのFirestoreをデータベースに利用)
+- お問い合わせ機能(FirebaseのFirestoreをデータベースに利用)
