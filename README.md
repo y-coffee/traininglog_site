@@ -21,6 +21,8 @@ Training Menu Today/今日のトレメニュー ～筋トレ情報サイト～
 
 - React.js 17.0.1
 
+  - useState
+
 - React Router Dom 5.2.0
 
 - Prop Types 15.7.2
@@ -28,6 +30,8 @@ Training Menu Today/今日のトレメニュー ～筋トレ情報サイト～
 - Material UI 4.11.2(スマートフォンのハンバーガーメニュー用アイコン)
 
 - Firebase 8.2.9
+
+  - Firestore
 
 - Adobe Photoshop(画像の編集加工)
 
